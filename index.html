@@ -1,13 +1,34 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <title>COVID Event Risk Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma-rtl.css" integrity="sha512-lRrLGKpDJnz2o4GiW8kQ+5ugePN6VGOquzU+nLqJaYPJ3XBk2FXldC+EhHBJVKuO93Ac4sEua9g+VMfWtNcI4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>COVID Event Risk Tracker</title>
 </head>
 <body>
-    
+    <header class="hero is-primary">
+        <h1 class="hero-body title is-1 has-text-centered">
+        COVID Event Risk Tracker
+        </h1>
+    </header>
+    <div class="section columns is-variable is-centered">
+        <div class="column mt-8 is-one-quarter"></div>
+        <input class="input column is-3" placeholder="Search your location here">
+        </input>
+        <button class="button is-vcentered has-text-centered is-1">
+            Search
+        </button>
+        <div class="column is-4"></div>
+    </div>
+    <div class="container columns is-size-2 is-centered">
+        <div class="column has-text-centered is-one-half-desktop is-12-mobile">
+            Events Near You
+        </div>
+        <div class="column is-size-2 has-text-centered">
+            COVID Risk Near You
+        </div>
+    </div>
 </body>
 </html>
