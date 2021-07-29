@@ -13,4 +13,4 @@ AS A Covid-concerned event enthusiast
 I WANT a website that can give me information regarding events in my area as well as COVID statistics
 SO THAT I can make informed decisions regarding attending events responsibly
 
-[RiskTrackerWireframe.pptx](https://github.com/bpkaufman4/Group-2-project-1/files/6897091/RiskTrackerWireframe.pptx)
+![RiskTrackerWireframe.pptx](https://github.com/bpkaufman4/Group-2-project-1/files/6897091/RiskTrackerWireframe.pptx)
