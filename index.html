@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma-rtl.css" integrity="sha512-lRrLGKpDJnz2o4GiW8kQ+5ugePN6VGOquzU+nLqJaYPJ3XBk2FXldC+EhHBJVKuO93Ac4sEua9g+VMfWtNcI4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>COVID Event Risk Tracker</title>
 </head>
-<body>
+<body class="has-background-info-light">
     <header class="hero pr-8 is-info">
         <h1 class="hero-body title is-1 has-text-centered">
         COVID Event Risk Tracker
@@ -22,16 +22,18 @@
         </button>
         <div class="column is-4"></div>
     </div>
-    <div class="container columns is-size-2 is-centered is-link">
-        <div class="column has-text-centered is-one-half-desktop is-12-mobile has-text-info">
+    <div class="container is-size-2 is-flex is-widescreen">
+        <div class="box ml-6 mr-6 mb-6 pl-6 pr-6 pb-6 is-centered has-text-centered is-one-half has-text-info has-text-weight-normal">
             Events Near You
+            <div class="pt-3 is-size-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, expedita hic eveniet dolores, tenetur unde dolorum dolor, voluptate explicabo non temporibus! Quae nemo molestias, dolor sequi illo ipsam dolore nulla.</div>
         </div>
-        <div class="column is-size-2 has-text-centered has-text-info">
+        <div class="box ml-6 mr-6 mb-6 pl-6 pr-6 pb-6 is-centered has-text-centered is-one-half has-text-info has-text-weight-normal">
             COVID Risk Near You
+            <div class="pt-3 is-size-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt mollitia inventore. Amet, assumenda voluptatum veniam ipsum architecto aut, harum reprehenderit aliquam eveniet minima recusandae, pariatur deserunt possimus nemo libero.</div>
         </div>
     </div>
-    <div class="columns">
-        <div class="column is-one-third">Your location: <span id="search-results"></span></div>
+    <div class="columns is-centered title">
+        <div class="column is-two-thirds title has-text-centered has-text-info">Your location: <span id="search-results"></span></div>
     </div>    
     <div class="column is-one-half" id="event-list"></div>
 <script src="./assets/js/scripts.js"></script>    
