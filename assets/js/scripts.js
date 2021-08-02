@@ -61,7 +61,10 @@ var displayEvents = function(events, searchTerm) {
     for (var i=0; i < evs.length; i++) { 
         var eventName = evs[i].name + ' / ' + evs[i].dates.start.localDate
         var eventEl = document.createElement("div")
+<<<<<<< HEAD
         eventEl.classList = "column is-two-fifths events"
+=======
+>>>>>>> 3e11bcb2f5514733811f65a9e03ef530ae011f2d
 
         var titleEl =document.createElement("span");
         titleEl.classList = "events"
