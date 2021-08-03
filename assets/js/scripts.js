@@ -37,7 +37,7 @@ var getCovidData = function(location) {
 }
 
 var displayCovidInfo = function(state, searchTerm) {
-    covidState.textContent = searchTerm
+    locationSearchTerm.textContent = searchTerm
     covidTable.classList.remove("hidden")
 
     var covidCases = state.actuals.cases
@@ -61,7 +61,6 @@ var displayEvents = function(events, searchTerm) {
     for (var i=0; i < evs.length; i++) { 
         var eventName = evs[i].name + ' / ' + evs[i].dates.start.localDate
         var eventEl = document.createElement("div")
-        eventEl.classList = "column is-two-fifths events"
 
         var titleEl =document.createElement("span");
         titleEl.classList = "events"

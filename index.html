@@ -21,22 +21,20 @@
             Search
         </button>
     </div>
-    <div class="container columns is-size-2 is-centered">
-        <div class="block column has-text-centered has-text-info is-one-half-desktop is-12-mobile">
-            Events Near You
-            <div class="columns">
-                <div class="column is-one-third"><h6 class="custom-heading">Your location: <span id="search-results"></span></h6></div>
-            </div>    
-            <div class="column is-one-half" id="event-list"></div>
+    <div class="columns is-centered title">
+        <div class="m-4 column is-two-thirds title has-text-centered has-text-info">Your location: <span id="search-results"></span></div>
+    </div>
+    <div class="columns is-size-2 is-flex is-widescreen">
+        <div class="column is-one-half">
+            <div class="box ml-6 mr-6 mb-6 pl-6 pr-6 pb-6 is-centered has-text-centered has-text-info has-text-weight-normal">
+                Events Near You
+                <div class="pt-3 is-size-4" id="event-list"></div>
+            </div>
         </div>
-        <div class="block column is-size-2 has-text-centered has-text-info">
-            COVID Risk Near You
-            <table class="table is-bordered hidden" id="covid-table">
-                <thead>
-                    <tr>
-                        <th><h6 class="custom-covid">Your state: <span id="covid-state"></span></h6></th>
-                    </tr>
-                </thead>
+        <div class="column is-one-half">
+            <div class="box ml-6 mr-6 mb-6 pl-6 pr-6 pb-6 is-centered has-text-centered has-text-info has-text-weight-normal">
+                COVID Risk Near You
+                <table class="table is-bordered hidden" id="covid-table">
                 <tbody>
                     <tr>
                         <th class="covid-cases custom-covid" >Total Cases</th>
@@ -56,26 +54,8 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-    </div>
-    
-    <div class="columns is-centered title">
-        <div class="m-4 column is-two-thirds title has-text-centered has-text-info">Your location: <span id="search-results"></span></div>
-    </div>    
-    <div class="columns is-size-2 is-flex is-widescreen">
-        <div class="column is-one-half">
-            <div class="box ml-6 mr-6 mb-6 pl-6 pr-6 pb-6 is-centered has-text-centered has-text-info has-text-weight-normal">
-                Events Near You
-                <div class="pt-3 is-size-4" id="event-list"></div>
             </div>
         </div>
-        <div class="column is-one-half">
-            <div class="box ml-6 mr-6 mb-6 pl-6 pr-6 pb-6 is-centered has-text-centered has-text-info has-text-weight-normal">
-                COVID Risk Near You
-                <div class="pt-3 is-size-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt mollitia inventore. Amet, assumenda voluptatum veniam ipsum architecto aut, harum reprehenderit aliquam eveniet minima recusandae, pariatur deserunt possimus nemo libero.</div>
-            </div>
-        </div>
-    </div>
 <script src="./assets/js/scripts.js"></script>    
 </body>
 </html>
