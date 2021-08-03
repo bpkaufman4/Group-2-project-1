@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma-rtl.css" integrity="sha512-lRrLGKpDJnz2o4GiW8kQ+5ugePN6VGOquzU+nLqJaYPJ3XBk2FXldC+EhHBJVKuO93Ac4sEua9g+VMfWtNcI4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>COVID Event Risk Tracker</title>
 </head>
 <body class="has-background-info-light">
@@ -19,6 +20,43 @@
         <button class="button is-info is-vcentered has-text-centered is-1" id="button">
             Search
         </button>
+    </div>
+    <div class="container columns is-size-2 is-centered">
+        <div class="column has-text-centered is-one-half-desktop is-12-mobile">
+            Events Near You
+            <div class="columns">
+                <div class="column is-one-third"><h6 class="custom-heading">Your location: <span id="search-results"></span></h6></div>
+            </div>    
+            <div class="column is-one-half" id="event-list"></div>
+        </div>
+        <div class="column is-size-2 has-text-centered">
+            COVID Risk Near You
+            <table class="table is-bordered hidden" id="covid-table">
+                <thead>
+                    <tr>
+                        <th><h6 class="custom-covid">Your state: <span id="covid-state"></span></h6></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="covid-cases custom-covid" >Total Cases</th>
+                        <td class="covid-cases-data" id="cases-table"></td>
+                    </tr>
+                    <tr>
+                        <th class="covid-deaths custom-covid" >Total Deaths</th>
+                        <td class="covid-deaths-data" id="deaths-table"></td>
+                    </tr>
+                    <tr>
+                        <th class="covid-newcases custom-covid">New Cases</th>
+                        <td class="covid-newcases-data" id="table-newcases"></td>
+                    </tr>
+                    <tr>
+                        <th class="covid-newdeaths custom-covid">New Deaths</th>
+                        <td class="covid-newdeaths-data" id="table-newdeaths"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     
     <div class="columns is-centered title">
