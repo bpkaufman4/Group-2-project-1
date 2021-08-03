@@ -7,7 +7,6 @@
 .then(data => console.log(data))*/
 
 var buttonEl = document.getElementById("button")
-var locationEl = document.getElementById("searchbar")
 var eventListEl = document.getElementById("event-list")
 var locationSearchTerm = document.getElementById("search-results")
 var covidTable = document.getElementById("covid-table")
@@ -16,6 +15,9 @@ var casesData = document.getElementById("cases-table")
 var deathData = document.getElementById("deaths-table")
 var newCasesData = document.getElementById('table-newcases')
 var newDeathData = document.getElementById('table-newdeaths')
+var selectEl = document.getElementById('state-select')
+
+var stateArray = [ 'AL', 'AK', 'AS', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY' ];
 
 var getLocation = function(location) {
     var apiUrl = "https://app.ticketmaster.com/discovery/v2/events.json?stateCode=" + location + "&sort=date,asc&apikey=vBiaZlx6A1wNGV2OtgkmcK7U3BMhGp4Q"
@@ -73,13 +75,30 @@ var displayEvents = function(events, searchTerm) {
 
 var searchSubmitHandler = function(event) {
     event.preventDefault()
-    var searchLocation = locationEl.value.trim().toUpperCase()
+    var searchLocation = selectEl.value.trim().toUpperCase()
     if (searchLocation) {
         getLocation(searchLocation);
         getCovidData(searchLocation);
-        locationEl.value= "";
+        selectEl.value= "Select Your State";
     } else {
         return
     }
 }
 buttonEl.addEventListener("click", searchSubmitHandler)
+
+document.addEventListener('DOMContentLoaded', () => {
+    (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+      const $notification = $delete.parentNode;
+  
+      $delete.addEventListener('click', () => {
+        $notification.parentNode.removeChild($notification);
+      });
+    });
+  });
+
+for (var i = 0; i < stateArray.length; i++) {
+    var optionEl = document.createElement("option");
+    optionEl.textContent = stateArray[i]
+
+    selectEl.appendChild(optionEl);
+}
