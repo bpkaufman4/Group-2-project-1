@@ -28,6 +28,7 @@ JavaScript
 Local Storage
 Server-Side APIs
 
+
 ## Tasks & Roles
 Front: Brian; Back: Will; Float: Missy
 
