@@ -26,7 +26,10 @@ HTML
 Bulma CSS
 JavaScript
 Local Storage
+<<<<<<< HEAD
 Server-Side APIs
+=======
+>>>>>>> 665c409d3ac6040ba7b5dc9a7712fd30a4f82321
 
 ## Tasks & Roles
 Front: Brian; Back: Will; Float: Missy
