@@ -1,22 +1,25 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-background-info-light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma-rtl.css" integrity="sha512-lRrLGKpDJnz2o4GiW8kQ+5ugePN6VGOquzU+nLqJaYPJ3XBk2FXldC+EhHBJVKuO93Ac4sEua9g+VMfWtNcI4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>COVID Event Risk Tracker</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
 </head>
-<body class="has-background-info-light">
+<body>
     <header class="hero pr-8 is-info is-underlined">
         <h1 class="hero-body title is-1 has-text-centered">
         COVID Event Risk Tracker
         </h1>
     </header>
     <div class="section columns is-variable pb-0 is-centered">
-        <input class="input column is-info is-3" placeholder="Search 2-digit state code" id="searchbar" type="text">
-        </input>
+        <div class="select is-info mr-1">
+            <select name="Select Your State" id="state-select">
+                <option>Select Your State</option>
+            </select>
+        </div>
         <button class="button is-info is-vcentered has-text-centered is-1" id="button">
             Search
         </button>
@@ -56,6 +59,7 @@
             </table>
             </div>
         </div>
+        
 <script src="./assets/js/scripts.js"></script>    
 </body>
 </html>
