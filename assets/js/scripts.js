@@ -79,14 +79,11 @@ var displayEvents = function(events, searchTerm) {
 
 var searchSubmitHandler = function(event) {
     event.preventDefault()
-    var searchLocation = selectEl.value.trim().toUpperCase()
-    if (searchLocation) {
-        getLocation(searchLocation);
-        getCovidData(searchLocation);
-        selectEl.value= "Select Your State";
-    } else {
-        return
-    }
+    var searchLocation = selectEl.value
+  
+    getLocation(searchLocation);
+    getCovidData(searchLocation);
+    selectEl.value= "Select Your State";
 }
 buttonEl.addEventListener("click", searchSubmitHandler)
 
