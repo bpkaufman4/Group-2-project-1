@@ -63,13 +63,17 @@ var displayEvents = function(events, searchTerm) {
     for (var i=0; i < evs.length; i++) { 
         var eventName = evs[i].name + ' / ' + evs[i].dates.start.localDate
         var eventEl = document.createElement("div")
-
-        var titleEl =document.createElement("span");
+        var titleEl =document.createElement("span")
+        var linkEl = document.createElement("a")
+        linkEl.setAttribute("href", evs[i].url)
+        linkEl.setAttribute("target", "_blank")
         titleEl.classList = "events"
         titleEl.textContent = eventName
 
-        eventEl.appendChild(titleEl);
+        eventEl.appendChild(linkEl)
+        linkEl.appendChild(titleEl)
         eventListEl.appendChild(eventEl)
+        
     }
 }
 
