@@ -22,11 +22,20 @@ I WANT a website that can give me information regarding events in my area as wel
 SO THAT I can make informed decisions regarding attending events responsibly.
 
 ## Technologies Used
+<<<<<<< HEAD
 HTML;
 Bulma CSS;
 JavaScript;
 Local Storage;
 Server-Side APIs;
+=======
+HTML
+Bulma CSS
+JavaScript
+Local Storage
+Server-Side APIs
+
+>>>>>>> 2a65e723ede389d2b88f034f0294d6367ab41049
 
 ## Tasks & Roles
 Front: Brian; Back: Will; Float: Missy;
