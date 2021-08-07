@@ -22,27 +22,24 @@ I WANT a website that can give me information regarding events in my area as wel
 SO THAT I can make informed decisions regarding attending events responsibly.
 
 ## Technologies Used
-HTML
-Bulma CSS
-JavaScript
-Local Storage
-<<<<<<< HEAD
-Server-Side APIs
-=======
->>>>>>> 665c409d3ac6040ba7b5dc9a7712fd30a4f82321
+HTML;
+Bulma CSS;
+JavaScript;
+Local Storage;
+Server-Side APIs;
 
 ## Tasks & Roles
-Front: Brian; Back: Will; Float: Missy
+Front: Brian; Back: Will; Float: Missy;
 
 ## Challenges
-Git merges
-API access limits
-Local data from cities not just states
+Git merges;
+API access limits;
+Local data from cities not just states;
 
 ## Successes
-Git conflict resolutions
-MVP for class demonstration
-Successful group of 3 people
+Git conflict resolutions;
+MVP for class demonstration;
+Successful group of 3 people;
 
 ## Future Develpment Directions
 TicketMaster: Add event images; Event map; Links to event tickets;
