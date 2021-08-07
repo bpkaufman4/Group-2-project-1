@@ -86,6 +86,7 @@ var searchSubmitHandler = function(event) {
     getLocation(searchLocation);
     getCovidData(searchLocation);
     selectEl.value= "Select Your State";
+    localStorage.setItem ('state',searchLocation)
 }
 buttonEl.addEventListener("click", searchSubmitHandler)
 
