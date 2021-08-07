@@ -38,6 +38,11 @@
             <div class="box ml-6 mr-6 mb-6 pl-6 pr-6 pb-6 is-centered has-text-centered has-text-info has-text-weight-normal">
                 COVID Risk Near You
                 <table class="table is-bordered is-fullwidth is-hoverable hidden has-text-info" id="covid-table">
+                <tfoot>
+                    <tr>
+                        <td>For more info on any of this data please visit the <a href="https://covid.cdc.gov/covid-data-tracker/#cases_community">CDC Website</a></td>
+                    </tr>
+                </tfoot>
                 <tbody>
                     <tr>
                         <th class="covid-cases has-text-info" >Total Cases</th>
@@ -48,12 +53,22 @@
                         <td class="covid-deaths-data" id="deaths-table"></td>
                     </tr>
                     <tr>
-                        <th class="covid-newcases has-text-info">New Cases</th>
+                        <th class="covid-newcases has-text-info">New Cases<span class="table-text"><br>(An estimated daily count based on reporting information)</span></th>
                         <td class="covid-newcases-data" id="table-newcases"></td>
                     </tr>
                     <tr>
-                        <th class="covid-newdeaths has-text-info">New Deaths</th>
+                        <th class="covid-newdeaths has-text-info">New Deaths<span class="table-text"><br>(An estimated daily count based on reporting information)</span></th>
                         <td class="covid-newdeaths-data" id="table-newdeaths"></td>
+                    </tr>
+                    <tr>
+                        <th class="transmission-level has-text-info">CDC Transmission Level Threat<br><ul class="table-text">
+                            <li>0: Low</li>
+                            <li>1: Moderate</li>
+                            <li>2: Substantial</li>
+                            <li>3: High</li>
+                            <li>4: Unknown</li>
+                        </ul></th>
+                        <td id="risk-info"></td>
                     </tr>
                 </tbody>
             </table>

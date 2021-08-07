@@ -8,3 +8,18 @@
 .events {
     font-size: 14px;
 }
+a {
+   text-decoration: underline; 
+}
+.table-text {
+    font-size: 12px;
+    color: #3e8ed0;
+    font-style: italic;
+}
+li {
+    list-style: none;
+}
+tfoot {
+    font-size: 16px;
+    color: #3e8ed0;
+}
