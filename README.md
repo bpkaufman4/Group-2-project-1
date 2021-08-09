@@ -36,6 +36,9 @@ The DOM;
 Server-Side APIs: TicketMaster & Covid Act Now;
 JSON;
 
+## Tasks & Roles
+Front: Brian; Back: Will; Float: Missy;
+
 ## Challenges
 Git merges;
 API access limits;
