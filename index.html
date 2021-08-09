@@ -9,12 +9,12 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
 </head>
 <body>
-    <header class="hero pr-8 is-info is-underlined">
+    <header class="hero is-info">
         <h1 class="hero-body title is-1 has-text-centered">
         COVID Event Risk Tracker
         </h1>
     </header>
-    <div class="section columns is-variable pb-0 is-centered">
+    <div class="section column is-centered">
         <div class="select is-info mr-1">
             <select name="Select Your State" id="state-select">
                 <option>Select Your State</option>
@@ -27,17 +27,23 @@
     <div class="columns is-centered title">
         <div class="m-4 column is-two-thirds title has-text-centered has-text-info">Your Location: <span id="search-results"></span></div>
     </div>
-    <div class="columns is-size-2 is-flex is-widescreen">
+    <div class="columns is-size-2 is-half-desktop">
         <div class="column is-one-half">
             <div class="box ml-6 mr-6 mb-6 pl-6 pr-6 pb-6 is-centered has-text-centered has-text-info has-text-weight-normal">
                 Events Near You
                 <div class="pt-3 is-size-4" id="event-list"></div>
+                <footer class="footer is-italic">
+                    <div class="content has-text-centered is-info is-size-6">
+                        Visit TicketMaster's <a href="https://www.ticketmaster.com/event-safety">Reopening Safely: A Guide for Fans page</a> to know what to expect as they work closely with venues everywhere to help make it a safer experience for all.
+                    </div>
+                </footer>
             </div>
+            
         </div>
-        <div class="column is-one-half">
+        <div class="column is-half-desktop">
             <div class="box ml-6 mr-6 mb-6 pl-6 pr-6 pb-6 is-centered has-text-centered has-text-info has-text-weight-normal">
                 COVID Risk Near You
-                <table class="table is-bordered is-fullwidth is-hoverable hidden has-text-info" id="covid-table">
+                <table class="table is-bordered is-hoverable hidden has-text-info" id="covid-table">
                 <tbody>
                     <tr>
                         <th class="covid-cases has-text-info" >Total Cases</th>
@@ -48,18 +54,32 @@
                         <td class="covid-deaths-data" id="deaths-table"></td>
                     </tr>
                     <tr>
-                        <th class="covid-newcases has-text-info">New Cases</th>
+                        <th class="covid-newcases has-text-info">New Cases<span class="table-text"><br>(An estimated daily count based on reporting information)</span></th>
                         <td class="covid-newcases-data" id="table-newcases"></td>
                     </tr>
                     <tr>
-                        <th class="covid-newdeaths has-text-info">New Deaths</th>
+                        <th class="covid-newdeaths has-text-info">New Deaths<span class="table-text"><br>(An estimated daily count based on reporting information)</span></th>
                         <td class="covid-newdeaths-data" id="table-newdeaths"></td>
+                    </tr>
+                    <tr>
+                        <th class="transmission-level has-text-info">CDC Transmission Level Threat<br><ul class="table-text">
+                            <li>0: Low</li>
+                            <li>1: Moderate</li>
+                            <li>2: Substantial</li>
+                            <li>3: High</li>
+                            <li>4: Unknown</li>
+                        </ul></th>
+                        <td id="risk-info"></td>
                     </tr>
                 </tbody>
             </table>
+            <footer class="footer is-italic">
+                <div class="content has-text-centered is-info is-size-6">
+                    For more information on any COVID data presented, please visit the <a href="https://covid.cdc.gov/covid-data-tracker/#cases_community">Centers of Disease Control (CDC) website.</a>
+                </div>
+            </footer>
             </div>
-        </div>
-        
+        </div>      
 <script src="./assets/js/scripts.js"></script>    
 </body>
 </html>

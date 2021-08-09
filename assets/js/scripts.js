@@ -15,6 +15,7 @@ var casesData = document.getElementById("cases-table")
 var deathData = document.getElementById("deaths-table")
 var newCasesData = document.getElementById('table-newcases')
 var newDeathData = document.getElementById('table-newdeaths')
+var riskData = document.getElementById("risk-info")
 var selectEl = document.getElementById('state-select')
 
 var stateArray = [ 'AL', 'AK', 'AS', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY' ];
@@ -46,16 +47,17 @@ var displayCovidInfo = function(state, searchTerm) {
     var covidDeaths = state.actuals.deaths
     var covidNewCases = state.actuals.newCases
     var covidNewDeaths = state.actuals.newDeaths
-    
+    var riskDataEl = state.cdcTransmissionLevel
+
     casesData.textContent = covidCases
     deathData.textContent = covidDeaths
     newCasesData.textContent = covidNewCases
     newDeathData.textContent = covidNewDeaths
+    riskData.textContent = riskDataEl
    
 }
 
 var displayEvents = function(events, searchTerm) {
-    eventListEl.textContent = "";
     locationSearchTerm.textContent = searchTerm;
 
     var evs = events["_embedded"].events
@@ -84,6 +86,7 @@ var searchSubmitHandler = function(event) {
     getLocation(searchLocation);
     getCovidData(searchLocation);
     selectEl.value= "Select Your State";
+    localStorage.setItem ('state',searchLocation)
 }
 buttonEl.addEventListener("click", searchSubmitHandler)
 
